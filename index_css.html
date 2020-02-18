@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Candidate Profile Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="class.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.css"> -->
+      </head>
+    <body class="box body">
+        <div class="ui inverted segment"></div>
+        <div class="ui  secondary  menu">
+            
+            <a class="item">
+              Home
+            </a>
+            <a class="active item">
+                Profile
+              </a>
+            <a class="item">
+              Messages
+            </a>
+            <a class="item">
+              Jobs
+            </a>
+            <div class="right menu">
+              <div class="item">
+                <div class="ui icon input">
+                  <input type="text" placeholder="Search...">
+                  <i class="search link icon"></i>
+                </div>
+              </div>
+              <a class="ui item">
+                Logout
+              </a>
+            </div>
+          </div>
+        <br><br>
+            
+            
+
+        <div class="ui grid box">
+              <div class="two column row">
+                 <div class="column">
+                    <div class="ui large card">
+                        <div class="image">
+                          <img src="data:image/jpeg;base64,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">
+                        </div>
+                        <div class="content">
+                          <a class="header">John Kelly</a>
+                          <div class="meta">
+                            <span class="date">Joined in 2013</span>
+                          </div>
+                          <div class="description">
+                            John is a full stack developer living in Bangalore, India.
+                          </div>
+                        </div>
+                        <div class="extra content">
+                          <a>
+                            <i class="user icon"></i>
+                            22 Friends
+                          </a>
+                          <br><br>
+                          <a class="ui grey label">C++</a>
+                          <a class="ui grey label">Phython</a>
+                          <a class="ui grey label">WebDev</a>
+                          
+  
+                        </div>
+                      </div>
+              </div>
+                
+                <div class="column">
+                  <h2>Past Experiences</h2>
+                  <br><br>
+                  <div class="ui items">
+                    <div class="item">
+                      <div class="image">
+                        <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F48%2FDell_Logo.svg%2F1024px-Dell_Logo.svg.png&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ADell_Logo.svg&tbnid=Rpho70czWyszbM&vet=12ahUKEwjdmqfYhdvnAhWHs6QKHcLCBrwQMygAegUIARCAAg..i&docid=vjW9JZsv-axgkM&w=1024&h=1024&q=dell%20logo&ved=2ahUKEwjdmqfYhdvnAhWHs6QKHcLCBrwQMygAegUIARCAAg"  width="200" height="150">
+                      </div>
+                      <div class="content">
+                        <a class="header">Company 1</a>
+                        <div class="meta">
+                          <span>Job Profile</span>
+                        </div>
+                        <div class="description">
+                          <p></p>
+                        </div>
+                        <div class="extra">
+                          Additional Details
+                        </div>
+                      </div>
+                    </div>
+                    <br><br>
+                    <div class="item">
+                      <div class="image">
+                        <img src="/images/acc.jpg">
+                      </div>
+                      <div class="content">
+                        <a class="header">Company 2</a>
+                        <div class="meta">
+                          <span>Job Description</span>
+                        </div>
+                        <div class="description">
+                          <p></p>
+                        </div>
+                        <div class="extra">
+                          Additional Details
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                </div>
+            <br><br>
+                
+              <br>
+              </div>
+              <div class="ui steps">
+                <div class="step">
+                  <i class="bookmark icon"></i>
+                  <div class="content">
+                    <div class="title">Review your application</div>
+                    <div class="description">verify details and references</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <i class="tasks icon"></i>
+                  <div class="content">
+                    <div class="title">Tasks in Progress</div>
+                    <div class="description">Second round completed</div>
+                  </div>
+                </div>
+                <div class="active step">
+                  <i class="calendar alternate outline icon"></i>
+                  <div class="content">
+                    <div class="title">Next Update</div>
+                    <div class="description">Check your email in 24 hours</div>
+                  </div>
+                </div>
+                <div class=" step">
+                  <i class="check square icon"></i>
+                  <div class="content">
+                    <div class="title">Confirm your offer letter</div>
+                  </div>
+                </div>
+              </div>
+
+      <div>
+          <p style="font-size: larger;">Other Applicants</p>
+
+        <table class="ui celled table">
+          <thead>
+            <tr><th>Name</th>
+            <th>Experience(in years)</th>
+            <th>Progress</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">James</td>
+              <td data-label="Age">4</td>
+              <td data-label="Job">Stage 2</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Jill</td>
+              <td data-label="Age">6</td>
+              <td data-label="Job">Stage 3</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Elyse</td>
+              <td data-label="Age">5</td>
+              <td data-label="Job">Selected</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+        
+    </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+
+</html>
