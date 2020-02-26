@@ -1,0 +1,22 @@
+h2{
+    color: rgb(58, 56, 56);
+}
+head{
+    background-color: rgb(34, 1, 1);
+    margin: 0;
+}
+
+.box1{
+    background-color:#333;
+    color: cornsilk;
+
+}
+ 
+.container{
+  width: 80%;  
+  margin: auto;
+}
+.box2{
+    border: 1px black;
+    
+}
