@@ -1,0 +1,59 @@
+.button {
+background-color:#333;
+color:#fff;
+padding:10px 15px;
+border: none;
+}
+
+.button2 {
+background-color:#333;
+color:#fff;
+padding:100px 150px;
+border: none;
+display: flex;
+}
+
+
+.anu{
+float: left;
+}
+.pro{
+float: right;
+}
+h1{
+font-size:400%;
+}
+
+.anu2{
+flex:1;
+padding-right: 60px;
+}
+
+.anu3{
+flex:1;
+padding-top: 60px;
+}
+
+.anu4{
+ padding:90px;
+display: flex;
+flex-flow: row;
+}
+
+.myform{
+padding: 20px;
+}
+
+.myform.formgroup{
+padding-bottom: 15px;
+}
+
+.myform label{
+display: block;
+}
+ .myform input{
+padding: 6px;
+width: 50%;
+}
+
+
