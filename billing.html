@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+  <head>
+    <div class="container">
+      <title>Billing Expense</title>
+      <h2>User Story 1</h2>
+      <form class=" myform" action="#">
+   <div class="box1" class='formgroup' >
+    <div>
+        <label>Billing</label>
+        <select name="Billing">
+            <option value="talview">Talview</option>
+            <option value="client">Client</option>
+            
+        </select>
+    </div>
+    <br>
+    <div>
+        <label>Client</label>
+        <select name="Client">
+            <option value="client1">Client 1</option>
+            <option value="client2">Client 2</option>
+            
+        </select>
+    </div>
+   </div>
+   </div>
+    <br>
+    <br>
+    <br>
+  </head>      
+  <body>
+   <div class= "container">
+    <div>
+        <label>Expense Category</label>
+        <select id = "expense" name="expense">
+            <option value="food">Food</option>
+            <option value="travel">Travel</option>
+            <option value="stay">Stay</option>
+            <option value="Others">Others</option>
+            
+        </select>
+    </div>
+    <br>
+    <div>
+        <label>Remarks:</label>
+        <textarea name="remarks"></textarea>
+    </div>
+    <br>
+    <div>
+        <label>Bills and invoice:</label>
+        <input type=file name="browse file"></input>
+    </div>
+    <br>
+    <div>
+        <label>Amount:</label>
+        <input type="number" name="amount">
+    </div>
+    <br>
+    <div>
+        <label>Bill Date:</label>
+        <input type="date" name="billdate">
+    </div>
+    <br>
+
+    <div  id="food" value="food" >
+        <h3>Food</h3>
+        <label>Number of meals:</label>
+        <input type="number" name="meals">
+    </div>
+    <br>
+
+    <div id="travel" value="travel" hidden>
+        
+        <h3>Travel</h3>
+        <div>
+        <label>Mode</label>
+        <select name="mode">
+            <option value="cab">Cab</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+            <option value="flight">Flight</option>
+            <option value="others">Others</option>   
+        </select>
+        </div>
+        <br>
+        <div>
+            <label>From:</label>
+            <input type="date" name="fromdate">
+        </div>
+        <br>
+        <div>
+            <label>To:</label>
+            <input type="date" name="todate">
+        </div>
+        <br>
+    </div>
+    <br>
+
+    <div id="stay" value="stay" hidden>
+        
+     <h3>Stay</h3>
+        <div>
+            <label>From:</label>
+            <input type="date" name="fromdate">
+        </div>
+        <br>
+        <div>
+            <label>To:</label>
+            <input type="date" name="todate">
+        </div>
+        <br>
+        <div>
+            <label>Place of Stay:</label>
+            <textarea name="place"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Designation(Please enter city, state, country):</label>
+            <textarea name="place"></textarea>
+        </div>
+    </div>
+
+        
+        <div  class="box2" id="Others" name="Others" value="Others" hidden>
+            <h3>Others</h3>
+                <label>Remarks:</label>
+                <textarea  name="remarks"></textarea>
+          
+        </div>
+        
+        <br>
+    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="cancel" value="Cancel">
+    <br>
+   </div>
+   <script src="bill.js"></script>
+  </body>
+</html>
